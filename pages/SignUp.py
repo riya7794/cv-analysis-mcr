@@ -27,7 +27,7 @@ if st.button("SAVE"):
        st.write(dob)
        st.write(co)
        st.write(str1)
-       conn=pymongo.MongoClient("mongodb+srv://Riya_123-mcrRiya-123098@:@cluster0.ad4csox.mongodb.net/?appName=Cluster0")
+       conn=pymongo.MongoClient("mongodb+srv://Riya_123-mcr:Riya-123098@cluster0.ad4csox.mongodb.net/?appName=Cluster0")
        mydb=conn["cv"]
        my=mydb["user_info"]
        my.insert_one({"username":name,"password":Password,"course":c,"gender":g,"address":address,"dob":str(dob),"color":co,"photo":str1})
