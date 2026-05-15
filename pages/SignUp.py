@@ -35,5 +35,4 @@ if st.button("SAVE"):
        
        
        
-if b1:
-       get_data()
+
