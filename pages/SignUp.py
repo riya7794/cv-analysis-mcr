@@ -17,8 +17,7 @@ str1="img"+str(count)+".png"
 st.write(str1)
 with open(str1,"wb") as f:
        f.write(web_cam.getvalue())
-b1=st.button("SAVE")
-def get_data():
+if st.button("SAVE"):
        st.success("Following Deatils are save successfully")
        st.write(name)
        st.write(Password)
@@ -28,7 +27,7 @@ def get_data():
        st.write(dob)
        st.write(co)
        st.write(str1)
-       conn=pymongo.MongoClient("mongodb+srv://shahiriya699_db_user:wLfH7OIOLJzlp8ez@cluster0.ad4csox.mongodb.net/?appName=Cluster0")
+       conn=pymongo.MongoClient("mongodb+srv://Riya_123-mcrRiya-123098@:@cluster0.ad4csox.mongodb.net/?appName=Cluster0")
        mydb=conn["cv"]
        my=mydb["user_info"]
        my.insert_one({"username":name,"password":Password,"course":c,"gender":g,"address":address,"dob":str(dob),"color":co,"photo":str1})
