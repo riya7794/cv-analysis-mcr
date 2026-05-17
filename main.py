@@ -11,20 +11,6 @@ st.write("Automatic Parsing: Extracts structured data (skills, experience, conta
 st.subheader("Ranking & Scoring: ")
 st.markdown("Compares candidates to job descriptions, scoring them based on skill matching, experience level, and education, often producing a 0-100% match score.")
 st.subheader("Keyword Extraction:")
-st.markdown("Detects relevant technical skills and phrases to ensure candidates meet requirements.")import streamlit as st
-import time
-
-with st.spinner("Loading....."):
-    time.sleep(2)
-st.balloons()
-st.set_page_config(page_title="AI CV Analyzer", layout="wide", page_icon="📄")
-st.title("🎯 Smart CV Analysis & Screening Dashboard")
-st.markdown("A CV analysis using AI project is an automated system that uses Natural Language Processing (NLP) and Machine Learning (ML) to parse, rank, and evaluate job applications against job descriptions. It automates screening by extracting skills, experience, and education from resumes, eliminating manual, time-consuming tasks and reducing human bias.")
-st.subheader("Key Aspects of the Project")
-st.write("Automatic Parsing: Extracts structured data (skills, experience, contact info) from unstructured formats like PDF or DOCX using tools like Pyresparser")
-st.subheader("Ranking & Scoring: ")
-st.markdown("Compares candidates to job descriptions, scoring them based on skill matching, experience level, and education, often producing a 0-100% match score.")
-st.subheader("Keyword Extraction:")
 st.markdown("Detects relevant technical skills and phrases to ensure candidates meet requirements.")
 st.subheader("Coding")
 st.code("from PyPDF2 import PdfReader")
