@@ -1,10 +1,25 @@
 import streamlit as st
 import time
 
-st.set_page_config(page_title=" Welcome to CV Analyzer", layout="wide", page_icon="📄")
-st.snow()
+with st.spinner("Loading....."):
+    time.sleep(2)
+st.balloons()
+st.set_page_config(page_title="AI CV Analyzer", layout="wide", page_icon="📄")
 st.title("🎯 Smart CV Analysis & Screening Dashboard")
-st.subheader("Upload resumes to extract insights, match job descriptions, and rank candidates.")
+st.markdown("A CV analysis using AI project is an automated system that uses Natural Language Processing (NLP) and Machine Learning (ML) to parse, rank, and evaluate job applications against job descriptions. It automates screening by extracting skills, experience, and education from resumes, eliminating manual, time-consuming tasks and reducing human bias.")
+st.subheader("Key Aspects of the Project")
+st.write("Automatic Parsing: Extracts structured data (skills, experience, contact info) from unstructured formats like PDF or DOCX using tools like Pyresparser")
+st.subheader("Ranking & Scoring: ")
+st.markdown("Compares candidates to job descriptions, scoring them based on skill matching, experience level, and education, often producing a 0-100% match score.")
+st.subheader("Keyword Extraction:")
+st.markdown("Detects relevant technical skills and phrases to ensure candidates meet requirements.")import streamlit as st
+import time
+
+with st.spinner("Loading....."):
+    time.sleep(2)
+st.balloons()
+st.set_page_config(page_title="AI CV Analyzer", layout="wide", page_icon="📄")
+st.title("🎯 Smart CV Analysis & Screening Dashboard")
 st.markdown("A CV analysis using AI project is an automated system that uses Natural Language Processing (NLP) and Machine Learning (ML) to parse, rank, and evaluate job applications against job descriptions. It automates screening by extracting skills, experience, and education from resumes, eliminating manual, time-consuming tasks and reducing human bias.")
 st.subheader("Key Aspects of the Project")
 st.write("Automatic Parsing: Extracts structured data (skills, experience, contact info) from unstructured formats like PDF or DOCX using tools like Pyresparser")
@@ -18,4 +33,21 @@ st.code("def extract_text(pdf_path):")
 st.code("reader = PdfReader(pdf_path)text = ")
 st.code("for page in reader.pages:")
 st.code("text += page.extract_text()return text")
-
+st.subheader("The main components and workflow of CV analysis in Python typically include the following key phases:")
+st.write("1.Image Acquisition & Preprocessing:Before a machine can analyze an image, the raw visual data must be loaded and standardized.Loading and Grayscaling:Reading images into numerical matrices and converting them to grayscale to reduce computational complexity.Resizing and Normalization: Standardizing image dimensions and scaling pixel values")
+st.write("2.Image Enhancement & Filtering:This phase emphasizes the desired features of an image while minimizing noise.Blurring & Smoothing:Using filters (like Gaussian blur) to reduce image noise before running analysis algorithms.Edge Detection: Identifying boundaries of objects using algorithms like the Canny Edge Detector.")
+st.write("3. Feature ExtractionIsolating specific points, shapes, or textures from the image to understand its geometry or contents.Keypoint detection: Finding corners and lines using algorithms like ORB, SIFT, or Hough Transforms.Contour detection: Tracing boundaries around objects for shape analysis and counting.")
+st.write("4. Machine Learning & Deep LearningModern CV analysis relies heavily on Artificial Intelligence to classify or detect the contents of an image.Classification:Categorizing the entire image into a predefined class.Object Detection: Pinpointing exact objects in an image and marking them with bounding boxes (often using pre-trained models).Segmentation: Categorizing every single pixel in an image to understand the exact shape of an object")
+st.write("5. Video ProcessingCV analysis often extends to continuous streams (such as webcams or security footage).Frame extraction: Breaking a video down into individual image frames to process them sequentially.Object tracking:Monitoring the movement of detected objects from frame to frame.Core Python Libraries UsedOpenCV: The industry standard for real-time image and video manipulation.NumPy:Used under the hood by OpenCV to handle images as highly optimized numerical matrices.TensorFlow/Keras & PyTorch:The leading deep learning frameworks used for training advanced AI models like CNNs") 
+st.subheader("Coding")
+st.code("from PyPDF2 import PdfReader")
+st.code("def extract_text(pdf_path):")
+st.code("reader = PdfReader(pdf_path)text = ")
+st.code("for page in reader.pages:")
+st.code("text += page.extract_text()return text")
+st.subheader("The main components and workflow of CV analysis in Python typically include the following key phases:")
+st.write("1.Image Acquisition & Preprocessing:Before a machine can analyze an image, the raw visual data must be loaded and standardized.Loading and Grayscaling:Reading images into numerical matrices and converting them to grayscale to reduce computational complexity.Resizing and Normalization: Standardizing image dimensions and scaling pixel values")
+st.write("2.Image Enhancement & Filtering:This phase emphasizes the desired features of an image while minimizing noise.Blurring & Smoothing:Using filters (like Gaussian blur) to reduce image noise before running analysis algorithms.Edge Detection: Identifying boundaries of objects using algorithms like the Canny Edge Detector.")
+st.write("3. Feature ExtractionIsolating specific points, shapes, or textures from the image to understand its geometry or contents.Keypoint detection: Finding corners and lines using algorithms like ORB, SIFT, or Hough Transforms.Contour detection: Tracing boundaries around objects for shape analysis and counting.")
+st.write("4. Machine Learning & Deep LearningModern CV analysis relies heavily on Artificial Intelligence to classify or detect the contents of an image.Classification:Categorizing the entire image into a predefined class.Object Detection: Pinpointing exact objects in an image and marking them with bounding boxes (often using pre-trained models).Segmentation: Categorizing every single pixel in an image to understand the exact shape of an object")
+st.write("5. Video ProcessingCV analysis often extends to continuous streams (such as webcams or security footage).Frame extraction: Breaking a video down into individual image frames to process them sequentially.Object tracking:Monitoring the movement of detected objects from frame to frame.Core Python Libraries UsedOpenCV: The industry standard for real-time image and video manipulation.NumPy:Used under the hood by OpenCV to handle images as highly optimized numerical matrices.TensorFlow/Keras & PyTorch:The leading deep learning frameworks used for training advanced AI models like CNNs") 
