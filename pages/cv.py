@@ -3,14 +3,14 @@ from pypdf import PdfReader
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 st.title("C.V A n a l y z e r")
-st.success("User CV")
+st.success("Upload resumes to extract insights, match job descriptions, and rank candidates")
 
-f1=st.file_uploader("Upload User CV")
+f1=st.file_uploader("### 📤Upload User CV")
 reader =PdfReader(f1)
 cv = "".join(page.extract_text() for page in reader.pages)
 st.write(cv)
 
-st.success("Job Description")
+st.success("### 💼Job Description")
 f2=st.file_uploader("Upload Job Description")
 reader1 = PdfReader(f2)
 jd = "".join(page.extract_text() for page in reader1.pages)
