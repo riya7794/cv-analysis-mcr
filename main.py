@@ -1,13 +1,6 @@
 import streamlit as st
-import time
 
-st.set_page_config(
-    page_title="AI CV Analysis",
-    page_icon="🤖",
-    layout="centered"
-)
-with st.spinner("Loading..."):
-    time.sleep(2)
-    st.snow()
-    st.title("An Ai-powered CV Analysis")
+st.set_page_config(page_title="AI CV Analyzer", layout="wide", page_icon="📄")
 
+st.title("🎯 Smart CV Analysis & Screening Dashboard")
+st.subheader("Upload resumes to extract insights, match job descriptions, and rank candidates.")
